@@ -1,0 +1,4 @@
+@SQ	SN:ref	LN:13
+read1	0	ref	3	255	9M	*	0	0	TGCTAGCGT	*
+read2	0	ref	5	255	5M	*	0	0	CTAGC	*
+read3	0	ref	6	255	1M1X3M	*	0	0	TCGCG	*
