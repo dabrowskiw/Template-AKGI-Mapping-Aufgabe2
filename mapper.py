@@ -115,8 +115,8 @@ def main():
     reference = read_fasta("data/fluA.fasta", Reference.__name__)[0]
     mapping = map_reads(reads, reference, 8, 2)
     print(mapping)
-    writer = SAMWriter(mapping)
-    writer.write_mapping("data/mapping.sam")
+    writer = MappingWriter(mapping)
+    writer.write_sam("data/mapping.sam")
 
 
 if __name__ == "__main__":
