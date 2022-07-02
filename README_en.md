@@ -34,14 +34,14 @@ The fields in the following non-header lines are defined as follows:
 | 1      | Readname                  | Name of the Read                                                                                             |
 | 2      | Flag                      | Bnary flag that describes the state of the read. 0=mapped, 4=not mapped                                      |
 | 3      | Reference name            | Name of the reference sequence the read was mapped to (must be same as the one given by "SN:" in the header) |
-| 3      | Position                  | Start position of the read (i.e. where the read was assigned to the reference), 1-based                      |
-| 4      | Quality                   | Mapping quality, or * if no mapping quality was computed by the mapper                                       |
-| 5      | CIGAR                     | CIGAR-String. Format: See documentation (in our case simply: <length of the read>M)                          |
-| 6      | Next read                 | Next mapped read from the read pair. Only for paired reads, otherwise *                                      |
-| 7      | Position of the next read | Position of the next mapped read from the read pair. Only for paired reads, otherwise 0                      |
-| 8      | Template length           | Estimated length of the template. Only for paired reads, otherwise 0                                         |
-| 9      | Sequence                  | Read sequence                                                                                                |
-| 10     | Basewise quality | Basewise quality of the mapping, or * if the mapper does not compute a mapping quality                       |
+| 4      | Position                  | Start position of the read (i.e. where the read was assigned to the reference), 1-based                      |
+| 5      | Quality                   | Mapping quality, or * if no mapping quality was computed by the mapper                                       |
+| 6      | CIGAR                     | CIGAR-String. Format: See documentation (in our case simply: <length of the read>M)                          |
+| 7      | Next read                 | Next mapped read from the read pair. Only for paired reads, otherwise *                                      |
+| 8      | Position of the next read | Position of the next mapped read from the read pair. Only for paired reads, otherwise 0                      |
+| 9      | Template length           | Estimated length of the template. Only for paired reads, otherwise 0                                         |
+| 10     | Sequence                  | Read sequence                                                                                                |
+| 11     | Basewise quality          | Basewise quality of the mapping, or * if the mapper does not compute a mapping quality                       |
 
 The complete documentation of the format can be found on the [github page of samtools](https://samtools.github.io/hts-specs/SAMv1.pdf). 
 
