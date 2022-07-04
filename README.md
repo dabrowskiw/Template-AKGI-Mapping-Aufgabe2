@@ -29,18 +29,18 @@ In der ersten Zeile - Header-Zeilen sind am führenden @ zu erkennen - wird mitt
 Die Spalten sind wie folgt definiert:
 
 | Nummer | Name                        | Beschreibung                                                                         |
-|---|-----------------------------|--------------------------------------------------------------------------------------|
-| 1 | Readname                    | Name des Reads                                                                       |
-| 2 | Flag                        | Binärer Flag, beschreibt Zustand des Reads. 0 = gemappt, 4 = nicht gemappt           |
-| 3 | Referenzname                | Name der Referenzsequenz                                                             |
-| 3 | Position                    | Startposition des Mappings (wo der Read der Referenz zugeordnet ist), 1-based        |
-| 4 | Qualität                    | Mapping-Qualität, oder * falls keine Mapping-Qualität berechnet wird                 |
-| 5 | CIGAR                       | CIGAR-String. Format: Siehe Dokumentation (am einfachsten: <Länge des Reads>M)       |
-| 6 | Nächster Read               | Nächster gemappter Read aus dem Read-Paar. Nur relevant für paired end, sonst *      |
-| 7 | Position des nächsten Reads | Position des nächsten gemappten Reads. Nur relevant für paired end, sonst 0          |
-| 8 | Template length             | Geschätzte Länge des Templates. Nur relevant für paired end, sonst 0                 |
-| 9 | Sequenz                     | Read-Sequenz                                                                         |
-| 10 | Basenweise Qualität         | Basenweise Qualität des Mappings, oder * falls Mapping-Qualität nicht berechnet wird |
+|--------|-----------------------------|--------------------------------------------------------------------------------------|
+| 1      | Readname                    | Name des Reads                                                                       |
+| 2      | Flag                        | Binärer Flag, beschreibt Zustand des Reads. 0 = gemappt, 4 = nicht gemappt           |
+| 3      | Referenzname                | Name der Referenzsequenz                                                             |
+| 4      | Position                    | Startposition des Mappings (wo der Read der Referenz zugeordnet ist), 1-based        |
+| 5      | Qualität                    | Mapping-Qualität, oder * falls keine Mapping-Qualität berechnet wird                 |
+| 6      | CIGAR                       | CIGAR-String. Format: Siehe Dokumentation (am einfachsten: <Länge des Reads>M)       |
+| 7      | Nächster Read               | Nächster gemappter Read aus dem Read-Paar. Nur relevant für paired end, sonst *      |
+| 8      | Position des nächsten Reads | Position des nächsten gemappten Reads. Nur relevant für paired end, sonst 0          |
+| 9      | Template length             | Geschätzte Länge des Templates. Nur relevant für paired end, sonst 0                 |
+| 10     | Sequenz                     | Read-Sequenz                                                                         |
+| 11     | Basenweise Qualität         | Basenweise Qualität des Mappings, oder * falls Mapping-Qualität nicht berechnet wird |
 
 Die vollständige Dokumentation des SAM-Formats finden Sie auf der [github-Seite von samtools](https://samtools.github.io/hts-specs/SAMv1.pdf). 
 
